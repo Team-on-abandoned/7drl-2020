@@ -27,15 +27,15 @@ namespace UnityToolbarExtender {
 		static void OnToolbarGUI() {
 			GUILayout.FlexibleSpace();
 
-			if (GUILayout.Button(EditorGUIUtility.IconContent("LookDevSingle1@2x"), ToolbarStyles.commandButtonStyle)) {
-				if (!EditorApplication.isPlaying) {
-					EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo();
-					EditorPrefs.SetInt("LastActiveScene", EditorSceneManager.GetActiveScene().buildIndex);
-					EditorSceneManager.OpenScene(SceneUtility.GetScenePathByBuildIndex(0));
-				}
+			//if (GUILayout.Button(EditorGUIUtility.IconContent("LookDevSingle1@2x"), ToolbarStyles.commandButtonStyle)) {
+			//	if (!EditorApplication.isPlaying) {
+			//		EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo();
+			//		EditorPrefs.SetInt("LastActiveScene", EditorSceneManager.GetActiveScene().buildIndex);
+			//		EditorSceneManager.OpenScene(SceneUtility.GetScenePathByBuildIndex(0));
+			//	}
 
-				EditorApplication.isPlaying = !EditorApplication.isPlaying;
-			}
+			//	EditorApplication.isPlaying = !EditorApplication.isPlaying;
+			//}
 		}
 
 		private static void LogPlayModeState(PlayModeStateChange state) {

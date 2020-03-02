@@ -45,7 +45,7 @@ public class VRFootIK : MonoBehaviour {
 			Quaternion footRotation = Quaternion.LookRotation(Vector3.ProjectOnPlane(transform.forward, hit.normal), hit.normal);
 			animator.SetIKRotationWeight(AvatarIKGoal.LeftFoot, leftFootRotWeight);
 			animator.SetIKRotation(AvatarIKGoal.LeftFoot, footRotation);
-		}
+		}	
 		else {
 			animator.SetIKPositionWeight(AvatarIKGoal.LeftFoot, 0);
 		}

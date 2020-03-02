@@ -2819,6 +2819,7 @@ GameObject:
   - component: {fileID: 2074301890}
   - component: {fileID: 2064864148}
   - component: {fileID: 2063612182}
+  - component: {fileID: 2075920135}
   m_Layer: 8
   m_Name: VRCamera
   m_TagString: MainCamera
@@ -2826,6 +2827,15 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!45 &2075920135
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075920134}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: bf1bf92a3ce592e40b898be6c21cc2fa, type: 2}
 --- !u!1 &2075925732
 GameObject:
   m_ObjectHideFlags: 0

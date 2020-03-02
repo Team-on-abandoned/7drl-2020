@@ -23,9 +23,11 @@ Available in [Platform](Link). If you encounter any problem, please leave a issu
 # Credits
  * [Team-on](https://github.com/Team-on)
  
-# Thanks for assets
- * [Name](Link) - what
-
+# Thanks for assets/tutorials
+ * [Valem](https://www.youtube.com/watch?v=tBYl-aSxUe0&list=PLrk7hDwk64-ZRB5lz-xJhgH7Lp6MIRcHJ&index=1) - inverse kinematics code
+ * [Unity Technologies](https://assetstore.unity.com/packages/3d/characters/robots/space-robot-kyle-4696) - Player model(Space Robot Kyle)
+ * [Mixamo](https://www.mixamo.com/#/) - Animations
+ 
 # Screenshots
 ![Screenshot1](Screenshots/1.jpg)  
 ![Screenshot2](Screenshots/2.jpg)  

@@ -4,9 +4,9 @@ using UnityEngine;
 public class VRRig : MonoBehaviour {
 	[SerializeField] float turnSmooth;
 
-	[SerializeField] VRMap head;
-	[SerializeField] VRMap leftHand;
-	[SerializeField] VRMap rightHand;
+	public VRMap head;
+	public VRMap leftHand;
+	public VRMap rightHand;
 
 	[SerializeField] Transform headConstraint;
 	[SerializeField] Vector3 headBodyOffset;

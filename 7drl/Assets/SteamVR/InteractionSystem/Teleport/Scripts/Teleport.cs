@@ -65,6 +65,9 @@ namespace Valve.VR.InteractionSystem
 		public MeshRenderer floorDebugSphere;
 		public LineRenderer floorDebugLine;
 
+		[Header("Hints")]
+		public bool showHint = false;
+
 		private LineRenderer pointerLineRenderer;
 		private GameObject teleportPointerObject;
 		private Transform pointerStartTransform;
@@ -184,7 +187,8 @@ namespace Valve.VR.InteractionSystem
 
 			CheckForSpawnPoint();
 
-			Invoke( "ShowTeleportHint", 5.0f );
+			if(showHint)
+				Invoke( "ShowTeleportHint", 5.0f );
 		}
 
 

@@ -1,15 +1,18 @@
 ﻿using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class TeleportMoving :  AMoveType {
+    [SerializeField] Teleport teleport;
+
     public override void Init() {
-        throw new System.NotImplementedException();
+
     }
 
     public override void Unuse() {
-        throw new System.NotImplementedException();
+        enabled = teleport.enabled = false;
     }
 
     public override void Use() {
-        throw new System.NotImplementedException();
+        enabled = teleport.enabled = true;
     }
 }

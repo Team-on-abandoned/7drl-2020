@@ -20,6 +20,8 @@ namespace Valve.VR.InteractionSystem
     //-------------------------------------------------------------------------
     public class Hand : MonoBehaviour
     {
+        public Action OnInitialized;
+
         // The flags used to determine how an object is attached to the hand.
         [Flags]
         public enum AttachmentFlags
@@ -1658,6 +1660,7 @@ namespace Valve.VR.InteractionSystem
 
             this.BroadcastMessage("SetInputSource", handType, SendMessageOptions.DontRequireReceiver); // let child objects know we've initialized
             this.BroadcastMessage("OnHandInitialized", deviceIndex, SendMessageOptions.DontRequireReceiver); // let child objects know we've initialized
+            OnInitialized?.Invoke();
         }
 
         public void SetRenderModel(GameObject prefab)

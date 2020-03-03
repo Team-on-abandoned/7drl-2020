@@ -1889,6 +1889,7 @@ GameObject:
   - component: {fileID: 4870545720114025808}
   - component: {fileID: 4870545720114025811}
   - component: {fileID: 4870545720114025837}
+  - component: {fileID: 1268938911}
   m_Layer: 8
   m_Name: TestRobotKyle
   m_TagString: Untagged
@@ -2063,6 +2064,23 @@ MonoBehaviour:
   leftFootRotWeight: 1
   rightFootPosWeight: 1
   rightFootRotWeight: 1
+--- !u!114 &1268938911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870545720114025836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac1e0ee9dd406e4eaf2cebb52e55206, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movingThreshold: 0.05
+  smoothnig: 0.511
+  animatorIsWalking: IsWalking
+  animatorBlendX: DirectionX
+  animatorBlendY: DirectionY
 --- !u!1 &4870545720154217848
 GameObject:
   m_ObjectHideFlags: 0

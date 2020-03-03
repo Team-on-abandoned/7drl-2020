@@ -7,29 +7,28 @@
 using UnityEngine;
 using System.Collections;
 
-namespace Valve.VR.InteractionSystem
-{
+namespace Valve.VR.InteractionSystem {
 	//-------------------------------------------------------------------------
-	[RequireComponent( typeof( CapsuleCollider ) )]
-	public class BodyCollider : MonoBehaviour
-	{
+	[RequireComponent(typeof(CapsuleCollider))]
+	public class BodyCollider : MonoBehaviour {
 		public Transform head;
 
+		[SerializeField] CharacterController characterController;
 		private CapsuleCollider capsuleCollider;
 
 		//-------------------------------------------------
-		void Awake()
-		{
+		void Awake() {
 			capsuleCollider = GetComponent<CapsuleCollider>();
 		}
 
 
 		//-------------------------------------------------
-		void FixedUpdate()
-		{
-			float distanceFromFloor = Vector3.Dot( head.localPosition, Vector3.up );
-			capsuleCollider.height = Mathf.Max( capsuleCollider.radius, distanceFromFloor );
+		void FixedUpdate() {
+			float distanceFromFloor = Vector3.Dot(head.localPosition, Vector3.up);
+			capsuleCollider.height = Mathf.Max(capsuleCollider.radius, distanceFromFloor);
+			characterController.height = Mathf.Max(characterController.radius, distanceFromFloor);
 			transform.localPosition = head.localPosition - 0.5f * distanceFromFloor * Vector3.up;
+			characterController.center = transform.localPosition;
 		}
 	}
 }

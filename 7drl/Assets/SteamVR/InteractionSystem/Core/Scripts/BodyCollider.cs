@@ -13,6 +13,7 @@ namespace Valve.VR.InteractionSystem {
 	public class BodyCollider : MonoBehaviour {
 		public Transform head;
 
+		[SerializeField] float yOffset = 0.07999986f;
 		[SerializeField] CharacterController characterController;
 		private CapsuleCollider capsuleCollider;
 
@@ -24,7 +25,7 @@ namespace Valve.VR.InteractionSystem {
 
 		//-------------------------------------------------
 		void FixedUpdate() {
-			float distanceFromFloor = Vector3.Dot(head.localPosition, Vector3.up);
+			float distanceFromFloor = Vector3.Dot(head.localPosition, Vector3.up) + yOffset;
 			capsuleCollider.height = Mathf.Max(capsuleCollider.radius, distanceFromFloor);
 			characterController.height = Mathf.Max(characterController.radius, distanceFromFloor);
 			transform.localPosition = head.localPosition - 0.5f * distanceFromFloor * Vector3.up;

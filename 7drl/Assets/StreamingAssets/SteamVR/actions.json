@@ -51,12 +51,103 @@
     {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
+    },
+    {
+      "name": "/actions/vrtk/in/TouchpadButton",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/vrtk/in/TriggerButton",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/vrtk/in/GripButton",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/vrtk/in/Pose",
+      "type": "pose"
+    },
+    {
+      "name": "/actions/vrtk/in/SkeletonLeftHand",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/left"
+    },
+    {
+      "name": "/actions/vrtk/in/SkeletonRightHand",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/right"
+    },
+    {
+      "name": "/actions/vrtk/in/TriggerSqueeze",
+      "type": "vector1",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/vrtk/in/TouchpadTouch",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/vrtk/in/TouchpadPosition",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/vrtk/in/ButtonStartMenu",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/vrtk/in/TriggerTouch",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/vrtk/in/TouchpadTwoTouch",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/vrtk/in/TouchpadTwoPosition",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/vrtk/in/TouchpadTwoButton",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/vrtk/in/GripTouch",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/vrtk/in/GripSqueeze",
+      "type": "vector1"
+    },
+    {
+      "name": "/actions/vrtk/in/ButtonOneTouch",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/vrtk/in/ButtonOneClick",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/vrtk/in/ButtonTwoTouch",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/vrtk/in/ButtonTwoClick",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/vrtk/out/Haptic",
+      "type": "vibration"
     }
   ],
   "action_sets": [
     {
       "name": "/actions/default",
       "usage": "leftright"
+    },
+    {
+      "name": "/actions/vrtk",
+      "usage": "single"
     }
   ],
   "default_bindings": [
@@ -123,7 +214,11 @@
       "/actions/default/in/SnapTurnLeft": "Snap Turn (Left)",
       "/actions/default/in/SnapTurnRight": "Snap Turn (Right)",
       "/actions/default/in/LocomotionMoving": "Locomotion Moving",
-      "/actions/default/in/SmoothRotating": "Smooth Rotating"
+      "/actions/default/in/SmoothRotating": "Smooth Rotating",
+      "/actions/vrtk/in/SkeletonLeftHand": "Skeleton (Left)",
+      "/actions/vrtk/in/SkeletonRightHand": "Skeleton (Right)",
+      "/actions/vrtk/in/Pose": "Pose",
+      "/actions/vrtk/out/Haptic": "Haptic"
     }
   ]
 }

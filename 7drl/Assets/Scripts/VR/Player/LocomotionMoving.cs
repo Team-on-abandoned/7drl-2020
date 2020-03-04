@@ -38,9 +38,9 @@ public class LocomotionMoving :  AMoveType {
 
     private void FixedUpdate() {
         if(direction != Vector3.zero)
-            characterController.Move(speed * Time.unscaledDeltaTime * Vector3.ProjectOnPlane(direction, Vector3.up) + new Vector3(0, GRAVITY_FORCE, 0) * Time.deltaTime);
+            characterController.Move(speed * Time.fixedUnscaledDeltaTime * Vector3.ProjectOnPlane(direction, Vector3.up) + new Vector3(0, GRAVITY_FORCE, 0) * Time.fixedDeltaTime);
         else
-            characterController.Move(new Vector3(0, GRAVITY_FORCE, 0) * Time.deltaTime);
+            characterController.Move(new Vector3(0, GRAVITY_FORCE, 0) * Time.fixedDeltaTime);
     }
 }
 

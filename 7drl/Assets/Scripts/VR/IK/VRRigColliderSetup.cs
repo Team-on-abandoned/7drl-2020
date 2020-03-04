@@ -34,12 +34,12 @@ public class VRRigColliderSetup : MonoBehaviour {
 	}
 
 	void OnLeftHandInit() {
-		rig.leftHand.vrTarget = player.leftHand.mainRenderModel.GetComponentInChildren<Animator>().GetBoneTransform(HumanBodyBones.LeftHand).transform;
+		rig.leftHand.vrTarget = player.leftHand.mainRenderModel.GetBone(1);
 		rig.leftHand.trackingPosOffset = newLeftHandOffset;
 	}
 
 	void OnRightHandInit() {
-		rig.rightHand.vrTarget = player.rightHand.mainRenderModel.GetComponentInChildren<Animator>().GetBoneTransform(HumanBodyBones.RightHand).transform;
+		rig.rightHand.vrTarget = player.rightHand.mainRenderModel.GetBone(1);
 		rig.rightHand.trackingPosOffset = newRightHandOffset;
 	}
 }

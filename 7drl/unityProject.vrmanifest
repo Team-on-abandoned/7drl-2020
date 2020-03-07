@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.7drl.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "D:\\code\\7drl-2020\\7drl\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "D:\\repo\\7drl-2020\\7drl\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "7drl [Testing]"
